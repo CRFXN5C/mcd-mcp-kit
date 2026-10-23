@@ -1,0 +1,16 @@
+{
+  "_note": [
+    "脱敏示例：Token 只允许用环境变量占位符，不要写真实值。",
+    "type 字段各客户端叫法不同，常见的是 http 与 streamableHttp 两种。",
+    "带 headers 的远程 HTTP Server 需要客户端本身支持该传输方式。"
+  ],
+  "mcpServers": {
+    "mcd-mcp": {
+      "type": "http",
+      "url": "https://mcp.mcd.cn",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      }
+    }
+  }
+}
